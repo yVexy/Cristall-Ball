@@ -9,6 +9,8 @@ const answers = [
   'Talvez',
   'Com certeza',
   'Sinais apontam que sim.',
+  'Nem fodendo',
+  'É tão triste que prefiro não lhe dizer 😔',
 ];
 
 function makeQuestion() {
@@ -17,6 +19,7 @@ function makeQuestion() {
   buttonQuestion.setAttribute('disabled', true);
 
   const question = '<div>' + inputQuestion.value + '</div>';
+  console.log(`\nPergunta recebida: ${question}`)
 
   const answerSend = answers[Math.floor(Math.random() * answers.length)];
 
