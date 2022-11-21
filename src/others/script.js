@@ -19,7 +19,6 @@ function makeQuestion() {
   buttonQuestion.setAttribute('disabled', true);
 
   const question = '<div>' + inputQuestion.value + '</div>';
-  console.log(`\nPergunta recebida: ${question}`)
 
   const answerSend = answers[Math.floor(Math.random() * answers.length)];
 
